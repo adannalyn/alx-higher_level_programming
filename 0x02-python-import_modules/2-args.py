@@ -2,5 +2,11 @@
 
 import sys
 
+counter = 0
+
 for arg in sys.argv:
-    print(arg.index(sys.argv), ':', arg)
+    if len(arg) > 1:
+        print("{}: {}".format(counter, arg))
+        counter += 1
+    gielse:
+        print("{}".format(len(arg)))

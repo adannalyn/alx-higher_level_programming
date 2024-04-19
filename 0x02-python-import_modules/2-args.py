@@ -13,7 +13,7 @@ else:
     print("{} arguments:".format(arge))
 
 counter = 1
-for arg in range (arge):
+for arg in range(arge):
     print(f"{counter}: {args[arg]}")
     counter += 1
 

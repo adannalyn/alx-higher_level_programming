@@ -11,11 +11,11 @@ elif arge == 1:
     print("1 argument:")
 else:
     print("{} arguments:".format(arge))
-    counter = 1
 
-    for arg in args:
-        print(f"{counter}: {arg}")
-        counter += 1
+counter = 1
+for arg in range (arge):
+    print(f"{counter}: {args[arg]}")
+    counter += 1
 
 if __name__ == "__main__":
     pass

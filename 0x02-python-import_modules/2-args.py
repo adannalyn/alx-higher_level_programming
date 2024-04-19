@@ -2,15 +2,16 @@
 
 import sys
 
-print(len(sys.argv[1:]), "arguments:")
+args = sys.argv[1:]
+arge = len(args)
 
-arg = len(sys.argv)
+if arge == 0:
+    print("0 arguments.")
 
-counter = 1
+else:
+    print("{} arguments:".format(arge))
+    counter = 1
 
-for args in range(1, arg):
-    if args > 0:
-        print(f"{counter}: {sys.argv[args]}")
+    for arg in args:
+        print(f"{counter}: {arg}")
         counter += 1
-    elif args == 0:
-        print("0 arguments.")

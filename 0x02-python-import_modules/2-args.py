@@ -15,3 +15,6 @@ else:
     for arg in args:
         print(f"{counter}: {arg}")
         counter += 1
+
+if __name__ == "__main__":
+    pass

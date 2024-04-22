@@ -5,7 +5,7 @@ def element_at(my_list, idx):
         return None
     elif idx not in my_list:
         return None
-    else:
+    elif idx in my_list:
         index = my_list.index(idx)
         return index
 

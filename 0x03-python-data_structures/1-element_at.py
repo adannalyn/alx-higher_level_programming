@@ -3,11 +3,10 @@
 def element_at(my_list, idx):
     if idx < 0:
         return None
-    elif idx not in my_list:
+    elif idx >= len(my_list):
         return None
-    elif idx in my_list:
-        indx = my_list[idx]
-        return indx
+    else:
+        return my_list[idx]
 
 
 if __name__ == "__main__":

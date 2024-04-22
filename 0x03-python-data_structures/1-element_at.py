@@ -6,8 +6,8 @@ def element_at(my_list, idx):
     elif idx not in my_list:
         return None
     elif idx in my_list:
-        index = my_list.index(idx)
-        return index
+        indx = my_list[idx]
+        return indx
 
 
 if __name__ == "__main__":

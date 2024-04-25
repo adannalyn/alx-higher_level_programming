@@ -6,7 +6,7 @@ def print_matrix_integer(matrix=[[]]):
         for num in row:
             if not first:
                 print(" ", end="")
-            print("{}".format(num), end="")
+            print("{:d}".format(num), end="")
             first = False
         print()
 

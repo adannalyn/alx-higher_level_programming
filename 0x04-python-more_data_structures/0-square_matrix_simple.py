@@ -3,8 +3,10 @@
 def square_matrix_simple(matrix=[]):
     num_list = []
     for row in matrix:
+        temp = []
         for num in row:
-            num_list.append(num ** 2)
+            temp.append(num ** 2)
+        num_list.append(temp)
     return num_list
 
 

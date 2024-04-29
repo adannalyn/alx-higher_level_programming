@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
 def search_replace(my_list, search, replace):
-    new_list = list(map(lambda x: x.replace(search, replace), my_list))
-    return new_list
+    my_list = [replace if num == search else num for num in my_list]
+    return my_list
+
 
 if __name__ == "__main__":
     pass

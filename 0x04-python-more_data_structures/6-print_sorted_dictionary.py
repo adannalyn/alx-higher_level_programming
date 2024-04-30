@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 def print_sorted_dictionary(a_dictionary):
-    return sorted(a_dictionary)
+    for k, v in sorted(a_dictionary.items()):
+        print(k, v)
 
 
 if __name__ == "__main__":

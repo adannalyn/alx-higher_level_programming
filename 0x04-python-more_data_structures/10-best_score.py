@@ -1,14 +1,12 @@
 #!/usr/bin/python3
 
 def best_score(a_dictionary):
+    if a_dictionary == None:
+        return None
     value = list(a_dictionary.values())
     key = list(a_dictionary.keys())
 
-    if a_dictionary == "":
-        return None
-
-    k[value.index(max(value))]
-    return max_key
+    return key[value.index(max(value))]
 
 
 if __name__ == "__main__":

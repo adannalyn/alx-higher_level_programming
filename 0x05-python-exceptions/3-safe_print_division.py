@@ -13,7 +13,5 @@ def safe_print_division(a, b):
     except IndexError:
         pass
     finally:
-        if results is None:
-            return None
-        else:
+        if results is not None:
             print("Inside result: {}".format(results))

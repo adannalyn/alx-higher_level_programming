@@ -2,8 +2,7 @@
 def safe_print_integer(value):
     try:
         if isinstance(value, int):
-            string = "{}"
-            formatted = string.format(value)
+            formatted = "{:d}".format(value)
             print(formatted)
             return True
         else:

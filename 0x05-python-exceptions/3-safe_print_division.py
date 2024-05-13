@@ -8,7 +8,7 @@ def safe_print_division(a, b):
     except ZeroDivisionError:
         pass
     finally:
-        if results is not None:
-            print("Inside result: {}".format(results))
-        elif results is None:
+        if results is None:
             print("Inside result: None")
+        elif results is not None:
+            print("Inside result: {}".format(results))

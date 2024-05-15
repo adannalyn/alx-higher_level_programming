@@ -1,10 +1,4 @@
 #!/usr/bin/python3
 class Square:
-    """
-    A class square representing a square.
-
-    Attributes:
-        None
-    """
-
+    """A class square representing a square."""
     pass

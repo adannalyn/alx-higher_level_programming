@@ -11,8 +11,6 @@ def list_division(my_list_1, my_list_2, list_length):
                 raise TypeError
             if not isinstance(n2, (int, float)):
                 raise TypeError
-            if n1 == 0:
-                raise ZeroDivisionError
             if n2 == 0:
                 raise ZeroDivisionError
             result = n1 / n2

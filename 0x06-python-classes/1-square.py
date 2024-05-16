@@ -8,4 +8,3 @@ class Square:
     def get_size(self):
         return self.__size
 square = Square(6)
-print(square.get_size())

@@ -22,4 +22,6 @@ class Square:
             size: the variable
         """
         return self.__size
+
+
 square = Square(6)

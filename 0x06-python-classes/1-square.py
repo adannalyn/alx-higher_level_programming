@@ -3,7 +3,9 @@
 
 
 class Square:
-    __size = size
-    def __init__(self, name):
-        self.__size
-square()
+    def __init__(self, size):
+        self.__size = size
+    def get_size(self):
+        return self.__size
+square = Square(6)
+print(square.get_size())

@@ -14,14 +14,5 @@ class Square:
         """
         self.__size = size
 
-    def get_size(self):
-        """
-        Accessing a private instance
 
-        Return:
-            size: the variable
-        """
-        return self.__size
-
-
-square = Square(6)
+square = Square(0)

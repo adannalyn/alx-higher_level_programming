@@ -40,6 +40,8 @@ class Square:
 
     def my_print(self):
         """print # in multiple times"""
+        if self.__size == 0:
+            print()
         for x in range(self.__size):
             for y in range(self.__size):
                 print("#", end="")

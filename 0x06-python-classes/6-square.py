@@ -7,20 +7,8 @@ class Square:
 
     def __init__(self, size=0, position=(0, 0)):
         """Initialize size with zero"""
-        if not isinstance(position, tuple):
-            raise TypeError("position must be a tuple of 2 positive integers")
-        if len(position) != 2:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        if not isinstance(position[0], int) or not isinstance(position[1], int):
-            raise TypeError("position must be a tuple of 2 positive integers")
-        if position[0] < 0 or position[1] < 0:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        self.position  = position
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        if size < 0:
-            raise ValueError ("size must be >= 0")
-        self.__size = size
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -29,18 +17,32 @@ class Square:
 
     @size.setter
     def size(self, value):
-        """swet property of size"""
-        if isinstance(value, int):
-            self.__size = value
+        """set property of size"""
+        if not isinstance(value, int):
+            raise TypeError("size must be an integer")
+        if value < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = value
 
     @property
     def position(self):
+        """get property of position"""
         return self.__position
 
     @position.setter
     def position(self, value):
-        if isinstance(value, tuple):
-            self.__position = value
+        """set property of size"""
+        if not isinstance(value, tuple):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if len(value) != 2:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if not isinstance(value[0], int):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if not isinstance(value[1], int):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if value[0] < 0 or value[1] < 0:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        self.__position = value
 
     def area(self):
         """Returns: size(int): return the area"""

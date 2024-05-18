@@ -1,0 +1,15 @@
+    >>> added = __import__('0-add_integer').add_integer
+    >>> added.__doc__
+    'Add two integers\n    param a: first integer\n    param b: second integer'
+    >>> added(2, 3)
+    5
+    >>> added(2, 3.5)
+    5
+    >>> added(90, 3.5)
+    93
+    >>> added(-90, -3.509)
+    -93
+    >>> added(27, -83)
+    -56
+    >>> added(-27, 83)
+    56

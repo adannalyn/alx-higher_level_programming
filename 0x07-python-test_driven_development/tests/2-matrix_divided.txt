@@ -1,0 +1,29 @@
+>>> matrixed = __import__('2-matrix_divided').matrix_divided
+>>> matrixed.__doc__
+'Divide a matrix by an integer'
+>>> matrix0 = [[1, 2], [4, 5, 6]]
+>>> if len(matrix0[0]) != len(matrix0[1]):
+...    raise TypeError("Each row of the matrix must have the same size")
+Traceback (most recent call last):
+TypeError: Each row of the matrix must have the same size
+>>> matrix1 = [[1,'2.5', 3], [4, 5, 6]]
+>>> for element in matrix1[0]:
+... 	if not isinstance(element, (int, float)):
+... 	   raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+>>> matrix2 = 1, 2
+>>> if not isinstance(matrix2, list):
+...    raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+>>> div = '3'
+>>> if not isinstance(div, (int, float)):
+...    raise TypeError("div must be a number")
+Traceback (most recent call last):
+TypeError: div must be a number
+>>> div1 = 0
+>>> if div1 == 0:
+...    raise ZeroDivisionError("division by zero")
+Traceback (most recent call last):
+ZeroDivisionError: division by zero

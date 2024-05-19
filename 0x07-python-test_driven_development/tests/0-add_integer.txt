@@ -13,3 +13,11 @@
     -56
     >>> added(-27, 83)
     56
+    >>> added("0.8", 0.6)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+    >>> added(0.8, "0.6")
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer

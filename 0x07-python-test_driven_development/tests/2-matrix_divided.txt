@@ -18,7 +18,7 @@ TypeError: matrix must be a matrix (list of lists) of integers/floats
 ...    raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
 Traceback (most recent call last):
 TypeError: matrix must be a matrix (list of lists) of integers/floats
->>> div = '3'
+>>> div = "3"
 >>> if not isinstance(div, (int, float)):
 ...    raise TypeError("div must be a number")
 Traceback (most recent call last):

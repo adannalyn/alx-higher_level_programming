@@ -5,10 +5,12 @@
 def matrix_divided(matrix, div):
     """Divide a matrix by an integer"""
     newMatrix = []
+    newrow = []
+    length1 = len(matrix[0])
     for row in matrix:
-        if len(matrix[0]) != len(matrix[1]):
+        if length1 != len(row):
             raise TypeError("Each row of the matrix must have the same size")
-        newrow = []
+
         for element in row:
             if not isinstance(element, (int, float)):
                 raise TypeError("matrix must be a matrix (list of lists) of integers/floats")

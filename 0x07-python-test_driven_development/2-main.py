@@ -27,3 +27,9 @@ try:
     print(matrix)
 except Exception as e:
     print(e)
+
+matrix = [
+    [3]
+]
+print(matrix_divided(matrix, 3))
+print(matrix)

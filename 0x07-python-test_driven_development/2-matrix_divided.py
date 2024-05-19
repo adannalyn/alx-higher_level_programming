@@ -4,8 +4,6 @@
 
 def matrix_divided(matrix, div):
     """Divide a matrix by an integer"""
-    if len(matrix[0]) != len(matrix[1]):
-        raise IndexError("matrix must have each row with the same size")
     newMatrix = []
     for row in matrix[0:]:
         newrow = []

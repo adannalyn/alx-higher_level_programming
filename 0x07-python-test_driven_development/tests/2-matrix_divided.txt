@@ -29,7 +29,7 @@ TypeError: div must be a number
 Traceback (most recent call last):
 ZeroDivisionError: division by zero
 >>> matrix = [[1, 2, 3], ["4", 5, 6]]
->>> for row in matrix[0:]:
+>>> for row in matrix:
 ... 	for elet in row:
 ... 	    if isinstance(elet, str):
 ... 	       	raise TypeError("matrix must be a matrix (list of lists) of integers/floats")

@@ -4,6 +4,8 @@
 
 def matrix_divided(matrix, div):
     """Divide a matrix by an integer"""
+    error = ("matrix must be a matrix (list of list\
+s) of integers/floats")
     newMatrix = []
     length1 = len(matrix[0])
     for row in matrix:
@@ -12,8 +14,7 @@ def matrix_divided(matrix, div):
         newrow = []
         for element in row:
             if not isinstance(element, (int, float)):
-                raise TypeError("matrix must be a matrix (list of lists) of\
-                integers/floats")
+                raise TypeError(error)
             if not isinstance(div, (int, float)):
                 raise TypeError("div must be a number")
             result = round(element / div, 2)

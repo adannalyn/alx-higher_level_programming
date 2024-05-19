@@ -5,7 +5,7 @@
 def matrix_divided(matrix, div):
     """Divide a matrix by an integer"""
     newMatrix = []
-    for row in matrix[0:]:
+    for row in matrix:
         newrow = []
         for element in row:
             result = round(element / div, 2)

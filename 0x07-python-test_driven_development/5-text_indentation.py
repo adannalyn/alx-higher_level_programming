@@ -9,14 +9,12 @@ def text_indentation(text):
     indented_text = ""
     i = 0
     while i < len(text):
-        if text[i] in ".?:":
-            indented_text += text[i] + "\n\n"
+        indented_text += text[i]
+        if text[i] in {".", "?", ":"}:
+            indented_text += "\n\n"
             i += 1
             while i < len(text) and text[i] == ' ':
                 i += 1
-        else:
-            indented_text += text[i]
-            i += 1
-    for line in indented_text.split("\n"):
-        if line.strip():
-            print(line.strip())
+            continue
+        i += 1
+    print("\n".join(line.strip() for line in indented_text.split("\n")))

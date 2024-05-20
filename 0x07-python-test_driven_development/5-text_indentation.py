@@ -12,4 +12,4 @@ def text_indentation(text):
         alpha.strip()
         if char in ['.', '?', ':']:
             alpha += '\n\n'
-    print(alpha.strip(), end="")
+    print(alpha.strip().lstrip(), end="")

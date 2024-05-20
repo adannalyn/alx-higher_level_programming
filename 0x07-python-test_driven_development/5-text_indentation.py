@@ -7,8 +7,10 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     text = text.strip()
-    n = '\n\n'
-    text = text.replace('.', '.'n).replace('?', '?'n).replace(':', ':'n)
+    n = '.\n\n'
+    o = '?\n\n'
+    p = ':\n\n'
+    text = text.replace('.', n).replace('?', o).replace(':', p)
     print()
     for strips in text.split('\n'):
         print(strips.strip())

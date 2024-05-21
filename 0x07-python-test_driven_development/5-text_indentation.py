@@ -7,14 +7,13 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     indented_text = ""
-    i = 0
-    while i < len(text):
-        indented_text += text[i]
-        if text[i] in {".", "?", ":"}:
-            indented_text += "\n\n"
-            i += 1
-            while i < len(text) and text[i] == ' ':
-                i += 1
-            continue
-        i += 1
-    print("\n".join(line.strip() for line in indented_text.split("\n")))
+
+    for char in text:
+        indented_text += char
+
+        if char in ".?:":
+            print(indented_text.strip() + "\n")
+            indented_text = ""
+
+    if indented_text:
+        print(indented_text.strip(), end="")

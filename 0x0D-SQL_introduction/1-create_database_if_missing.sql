@@ -1,2 +1,2 @@
 -- create new database
-CREATE DATABASE IF NOT EXISTS hlocalhost;
+CREATE DATABASE IF NOT EXISTS hbtn_0c_0;

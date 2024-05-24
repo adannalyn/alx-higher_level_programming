@@ -1,3 +1,5 @@
 -- list same scores under number
-SELECT count(score) AS number
-GROUP BY score, number;
+SELECT score, COUNT(score) AS number
+FROM second_table
+GROUP BY score;
+HAVING COUNT(*) > 1

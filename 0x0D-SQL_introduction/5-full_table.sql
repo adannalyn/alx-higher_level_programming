@@ -1,2 +1,2 @@
 -- Display contents of table from hbtn_0c_0 database
-DESC first_table;
+SHOW CREATE TABLE IF NOT EXISTS first_table;
